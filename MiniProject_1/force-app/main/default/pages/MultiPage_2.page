@@ -1,0 +1,15 @@
+<apex:page >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <h1>
+                    This is the second page
+                </h1>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!step1}" value="Prev"/>
+                <apex:commandButton action="{!step3}" value="Next"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,23 @@
+<apex:page standardController="Account" recordSetVar="accounts" >
+   <apex:pageBlock >
+       <apex:repeat value="{!accounts}" var="a">
+          <li>
+             <apex:outputText value="{!a.name}">
+              
+             </apex:outputText> 
+          </li>
+          
+          <li>
+              <!--value can be value="/{!a.id}" target="_new" -->
+              <apex:outputLink value="{urlfor($Action.Account.View,a.id)}">
+                 {!a.name}
+             
+              </apex:outputLink> 
+          </li>
+            
+       
+       </apex:repeat>
+    
+    </apex:pageBlock>
+    
+</apex:page>
